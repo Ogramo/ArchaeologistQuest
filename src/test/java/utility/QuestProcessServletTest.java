@@ -49,7 +49,7 @@ public class QuestProcessServletTest{
         when(mockService.getAnswers(mockDecision)).thenReturn(answers);
         when(mockService.getTitle(mockAnswer)).thenReturn("Title");
         when(mockService.getNextStage(mockAnswer)).thenReturn("nextStage");
-        when(mockService.getDecisions()).thenReturn(new HashMap<String, Decision>());
+        when(mockService.getDecisions()).thenReturn(new HashMap<>());
 
         servlet.doPost(request, response);
 

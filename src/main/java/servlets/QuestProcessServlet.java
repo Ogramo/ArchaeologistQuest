@@ -16,7 +16,7 @@ import java.util.List;
 @WebServlet(name = "QuestProcessServlet", value = "/quest-processing")
 public class QuestProcessServlet extends HttpServlet {
     @SneakyThrows
-    private static void redirectOrForwardToNextStage(HttpServletRequest req, HttpServletResponse resp, String nextStage) throws IOException {
+    private static void redirectOrForwardToNextStage(HttpServletRequest req, HttpServletResponse resp, String nextStage){
         if (nextStage.equals("end")) {
             req.getRequestDispatcher("quest-finish.jsp").forward(req, resp);
         } else {
@@ -38,7 +38,8 @@ public class QuestProcessServlet extends HttpServlet {
     }
 
     @Override
-    public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    @SneakyThrows
+    public void doPost(HttpServletRequest req, HttpServletResponse resp) {
         HttpSession session = req.getSession();
         QuestService service = (QuestService) session.getAttribute("service");
         Decision decision = (Decision) session.getAttribute("decision");
