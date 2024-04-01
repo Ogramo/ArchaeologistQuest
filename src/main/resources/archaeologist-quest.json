@@ -1,0 +1,399 @@
+{
+  "title": "On the Trail of the Lost Artifact",
+  "exposition": "You're an intrepid archaeologist on the hunt for a legendary artifact rumored to hold unimaginable power. As you journey through ancient ruins and perilous jungles, you must make crucial decisions to uncover the truth.",
+  "decisions": {
+    "first-stage": {
+      "exposition": "Which path will you take?",
+      "answers": [
+        {
+          "title": "Explore the Temple Ruins",
+          "description": "Amongst the overgrown ruins, you find a crumbling statue with a faint inscription. 'The path to the artifact lies through the heart of the temple,' it seems to whisper.",
+          "nextStage": "temple-ruins"
+        },
+        {
+          "title": "Venture into the Deep Jungle",
+          "description": "The jungle is dense and teeming with life. Strange markings on trees catch your eye, possibly indicating a hidden path.",
+          "nextStage": "deep-jungle"
+        }
+      ]
+    },
+    "temple-ruins": {
+      "exposition": "As you delve deeper into the temple ruins, you encounter a fork in the path. Which way will you go?",
+      "answers": [
+        {
+          "title": "Follow the Dark Corridor",
+          "description": "The dark corridor seems ominous, but perhaps it leads to the heart of the temple where the artifact awaits.",
+          "nextStage": "dark-corridor"
+        },
+        {
+          "title": "Ascend the Crumbling Stairs",
+          "description": "The crumbling stairs may be treacherous, but they offer a glimpse of sunlight filtering through the foliage above.",
+          "nextStage": "crumbling-stairs"
+        }
+      ]
+    },
+    "temple-heart": {
+      "exposition": "Congratulations! You've reached the heart of the temple. Before you lies the legendary artifact, gleaming with an otherworldly light. What will you do?",
+      "answers": [
+        {
+          "title": "Claim the Artifact",
+          "description": "You reach out and claim the artifact, feeling its power coursing through you. But with great power comes great responsibility...",
+          "nextStage": "artifact-claim"
+        },
+        {
+          "title": "Leave the Artifact",
+          "description": "You hesitate, unsure of the consequences of claiming such a powerful artifact. You decide to leave it behind and continue your journey.",
+          "nextStage": "deep-jungle"
+        }
+      ]
+    },
+    "deep-jungle": {
+      "exposition": "As you navigate through the dense jungle, you hear strange noises in the distance. What will you do?",
+      "answers": [
+        {
+          "title": "Press Onward",
+          "description": "You steel yourself and press onward, determined to uncover the secrets hidden within the jungle.",
+          "nextStage": "press-onward"
+        },
+        {
+          "title": "Retreat and Regroup",
+          "description": "The jungle is unforgiving, and it may be wise to retreat and regroup before continuing your journey.",
+          "nextStage": "retreat-regroup"
+        }
+      ]
+    },
+    "dark-corridor": {
+      "exposition": "The dark corridor seems endless, but you press on. Suddenly, you come face to face with a deadly trap! What will you do?",
+      "answers": [
+        {
+          "title": "Attempt to Disarm the Trap",
+          "description": "You carefully attempt to disarm the trap, hoping to continue your journey safely.",
+          "nextStage": "trap-outcome"
+        },
+        {
+          "title": "Retreat and Find Another Path",
+          "description": "The trap is too dangerous to risk triggering. You retreat to find another path through the temple ruins.",
+          "nextStage": "temple-ruins"
+        }
+      ]
+    },
+    "crumbling-stairs": {
+      "exposition": "As you ascend the crumbling stairs, you hear a loud rumbling noise. What will you do?",
+      "answers": [
+        {
+          "title": "Press Onward",
+          "description": "You press onward, determined to reach the top of the stairs and uncover the secrets that await.",
+          "nextStage": "temple-heart"
+        },
+        {
+          "title": "Retreat to Safety",
+          "description": "The stairs are collapsing around you! You retreat to safety just in time, narrowly avoiding disaster.",
+          "nextStage": "temple-ruins"
+        }
+      ]
+    },
+    "press-onward": {
+      "exposition": "As you press onward through the jungle, you stumble upon a hidden clearing. What will you do?",
+      "answers": [
+        {
+          "title": "Investigate the Clearing",
+          "description": "The clearing may hold clues to your quest. You investigate further, hoping to uncover valuable information.",
+          "nextStage": "clearing-investigation"
+        },
+        {
+          "title": "Continue Forward",
+          "description": "You press forward, determined to stay focused on your ultimate goal of finding the artifact.",
+          "nextStage": "deep-jungle"
+        }
+      ]
+    },
+    "retreat-regroup": {
+      "exposition": "As you retreat from the jungle, you stumble upon a hidden cave entrance. What will you do?",
+      "answers": [
+        {
+          "title": "Explore the Cave",
+          "description": "The cave may offer shelter and perhaps even clues to aid you on your journey. You decide to explore its depths.",
+          "nextStage": "cave-exploration"
+        },
+        {
+          "title": "Leave the Jungle",
+          "description": "You decide to leave the jungle for now and regroup at your base camp before planning your next move.",
+          "nextStage": "end"
+        }
+      ]
+    },
+    "trap-outcome": {
+      "exposition": "You carefully disarm the trap and continue down the dark corridor. Suddenly, you reach a dead end! What will you do?",
+      "answers": [
+        {
+          "title": "Search for a Hidden Passage",
+          "description": "There must be a hidden passage somewhere in the corridor. You search diligently, hoping to find a way forward.",
+          "nextStage": "hidden-passage"
+        },
+        {
+          "title": "Retrace Your Steps",
+          "description": "You decide to retrace your steps and find another path through the temple ruins.",
+          "nextStage": "temple-ruins"
+        }
+      ]
+    },
+    "clearing-investigation": {
+      "exposition": "As you investigate the clearing, you discover an ancient altar covered in mysterious symbols. What will you do?",
+      "answers": [
+        {
+          "title": "Decipher the Symbols",
+          "description": "The symbols may hold the key to unlocking the secrets of the artifact. You attempt to decipher their meaning.",
+          "nextStage": "symbol-decipher"
+        },
+        {
+          "title": "Leave the Clearing",
+          "description": "You decide to leave the clearing behind and continue your journey through the jungle.",
+          "nextStage": "deep-jungle"
+        }
+      ]
+    },
+    "cave-exploration": {
+      "exposition": "As you explore the depths of the cave, you stumble upon a hidden chamber. What will you do?",
+      "answers": [
+        {
+          "title": "Search the Chamber",
+          "description": "The chamber may hold valuable treasures or clues to aid you on your quest. You search it thoroughly.",
+          "nextStage": "chamber-search"
+        },
+        {
+          "title": "Leave the Cave",
+          "description": "You decide to leave the cave and continue your journey through the jungle.",
+          "nextStage": "deep-jungle"
+        }
+      ]
+    },
+    "symbol-decipher": {
+      "exposition": "As you decipher the symbols, a hidden compartment in the altar opens, revealing an ancient scroll. What will you do?",
+      "answers": [
+        {
+          "title": "Read the Scroll",
+          "description": "The scroll may contain valuable information about the artifact or its whereabouts. You carefully unfurl it and begin to read.",
+          "nextStage": "scroll-revelation"
+        },
+        {
+          "title": "Leave the Altar",
+          "description": "You decide to leave the altar behind and continue your journey through the jungle.",
+          "nextStage": "deep-jungle"
+        }
+      ]
+    },
+    "scroll-revelation": {
+      "exposition": "As you read the scroll, ancient words begin to glow with an ethereal light. Suddenly, you understand their meaning. What will you do?",
+      "answers": [
+        {
+          "title": "Follow the Instructions",
+          "description": "The scroll contains instructions that may lead you closer to the artifact. You follow them, eager to uncover its secrets.",
+          "nextStage": "artifact-discovery"
+        },
+        {
+          "title": "Ignore the Instructions",
+          "description": "You decide to ignore the instructions on the scroll and trust your instincts instead.",
+          "nextStage": "deep-jungle"
+        }
+      ]
+    },
+    "artifact-discovery": {
+      "exposition": "Following the instructions from the scroll, you journey deeper into the jungle until you stumble upon a hidden chamber. Inside, you find the artifact gleaming with an otherworldly light. What will you do?",
+      "answers": [
+        {
+          "title": "Claim the Artifact",
+          "description": "You reach out and claim the artifact, feeling its power coursing through you. But with great power comes great responsibility...",
+          "nextStage": "artifact-claim"
+        },
+        {
+          "title": "Leave the Artifact",
+          "description": "You hesitate, unsure of the consequences of claiming such a powerful artifact. You decide to leave it behind and continue your journey.",
+          "nextStage": "deep-jungle"
+        }
+      ]
+    },
+    "artifact-claim": {
+      "exposition": "As you claim the artifact, the ground begins to shake and the jungle around you comes alive with danger. What will you do?",
+      "answers": [
+        {
+          "title": "Use the Artifact's Power",
+          "description": "You harness the power of the artifact to protect yourself and confront the dangers closing in around you.",
+          "nextStage": "artifact-power"
+        },
+        {
+          "title": "Flee the Chamber",
+          "description": "The situation is too perilous to risk. You flee the chamber, leaving the artifact behind.",
+          "nextStage": "end"
+        }
+      ]
+    },
+    "artifact-power": {
+      "exposition": "As you unleash the artifact's power, you feel a surge of energy coursing through you. What will you do?",
+      "answers": [
+        {
+          "title": "Control the Power",
+          "description": "You focus your willpower and control the artifact's power, using it to overcome the dangers threatening you.",
+          "nextStage": "victory"
+        },
+        {
+          "title": "Lose Control",
+          "description": "The power overwhelms you, spiraling out of control and unleashing chaos upon the jungle. You realize too late the true cost of wielding such power.",
+          "nextStage": "end"
+        }
+      ]
+    },
+    "victory": {
+      "exposition": "Congratulations! You have successfully claimed the artifact and overcome the dangers of the jungle. What will you do now?",
+      "answers": [
+        {
+          "title": "Return Home",
+          "description": "With the artifact in hand, you return home victorious, ready to unlock its secrets and harness its power for the good of humanity.",
+          "nextStage": "end"
+        },
+        {
+          "title": "Continue Exploring",
+          "description": "Your thirst for adventure is unquenchable. You decide to continue exploring, seeking out new mysteries and challenges.",
+          "nextStage": "end"
+        }
+      ]
+    },
+    "hidden-passage": {
+      "exposition": "After searching diligently, you uncover a hidden passage in the wall of the corridor. What will you do?",
+      "answers": [
+        {
+          "title": "Enter the Hidden Passage",
+          "description": "The hidden passage may lead to the heart of the temple or reveal valuable secrets. You enter cautiously.",
+          "nextStage": "temple-heart"
+        },
+        {
+          "title": "Return to the Main Path",
+          "description": "You decide not to risk exploring the hidden passage and return to the main path through the temple ruins.",
+          "nextStage": "temple-ruins"
+        }
+      ]
+    },
+    "chamber-search": {
+      "exposition": "As you search the chamber, you find a hidden lever concealed behind a pile of rubble. What will you do?",
+      "answers": [
+        {
+          "title": "Pull the Lever",
+          "description": "Curiosity piqued, you pull the lever, uncertain of its consequences.",
+          "nextStage": "lever-pull"
+        },
+        {
+          "title": "Leave the Chamber",
+          "description": "You decide to leave the chamber behind and continue your journey through the jungle.",
+          "nextStage": "deep-jungle"
+        }
+      ]
+    },
+    "lever-pull": {
+      "exposition": "As you pull the lever, the chamber begins to shake, revealing a hidden passage. What will you do?",
+      "answers": [
+        {
+          "title": "Explore the Passage",
+          "description": "The newly revealed passage may lead to further discoveries or dangers. You cautiously venture forth.",
+          "nextStage": "hidden-passage-2"
+        },
+        {
+          "title": "Leave the Chamber",
+          "description": "You decide to leave the chamber behind and continue your journey through the jungle.",
+          "nextStage": "deep-jungle"
+        }
+      ]
+    },
+    "hidden-passage-2": {
+      "exposition": "As you explore the hidden passage, you encounter a series of ancient traps. What will you do?",
+      "answers": [
+        {
+          "title": "Attempt to Disarm the Traps",
+          "description": "You carefully attempt to disarm the traps, hoping to proceed safely.",
+          "nextStage": "traps-outcome"
+        },
+        {
+          "title": "Retreat and Find Another Path",
+          "description": "The traps are too dangerous to risk triggering. You retreat to find another route through the hidden passage.",
+          "nextStage": "temple-heart"
+        }
+      ]
+    },
+    "traps-outcome": {
+      "exposition": "As you attempt to disarm the traps, one of them triggers, sealing off the passage behind you. What will you do?",
+      "answers": [
+        {
+          "title": "Press Onward",
+          "description": "Despite the danger, you press onward, determined to reach your goal.",
+          "nextStage": "temple-heart"
+        },
+        {
+          "title": "Retreat and Regroup",
+          "description": "The situation is too perilous to continue. You retreat to regroup and find another way.",
+          "nextStage": "retreat-regroup-2"
+        }
+      ]
+    },
+    "retreat-regroup-2": {
+      "exposition": "As you retreat and regroup, you stumble upon an ancient map detailing hidden passages within the temple. What will you do?",
+      "answers": [
+        {
+          "title": "Study the Map",
+          "description": "The map may hold the key to finding another way to the artifact. You carefully study its details.",
+          "nextStage": "map-study"
+        },
+        {
+          "title": "Continue Exploring",
+          "description": "You decide to continue exploring the temple ruins, seeking out new paths and discoveries.",
+          "nextStage": "temple-ruins"
+        }
+      ]
+    },
+    "map-study": {
+      "exposition": "As you study the map, you decipher a route that bypasses the traps and leads directly to the heart of the temple. What will you do?",
+      "answers": [
+        {
+          "title": "Follow the Route",
+          "description": "The mapped route seems promising. You follow it, eager to reach the artifact.",
+          "nextStage": "temple-heart"
+        },
+        {
+          "title": "Double-Check the Map",
+          "description": "You decide to double-check the accuracy of the map before proceeding, not wanting to fall into another trap.",
+          "nextStage": "map-double-check"
+        }
+      ]
+    },
+    "map-double-check": {
+      "exposition": "As you double-check the map, you notice a discrepancy in the directions. What will you do?",
+      "answers": [
+        {
+          "title": "Trust Your Instincts",
+          "description": "You trust your instincts and follow the route you believe to be correct.",
+          "nextStage": "temple-heart"
+        },
+        {
+          "title": "Find Another Path",
+          "description": "You decide not to risk following the potentially incorrect route and search for another path.",
+          "nextStage": "temple-ruins"
+        }
+      ]
+    },
+    "end-artifact-search": {
+      "exposition": "Having successfully claimed the artifact, you emerge from the depths of the jungle. What will you do now?",
+      "answers": [
+        {
+          "title": "Return Home",
+          "description": "With the artifact in hand, you return home victorious, ready to unlock its secrets and harness its power for the good of humanity.",
+          "nextStage": "end"
+        },
+        {
+          "title": "Continue Exploring",
+          "description": "Your thirst for adventure is unquenchable. You decide to continue exploring, seeking out new mysteries and challenges.",
+          "nextStage": "end"
+        }
+      ]
+    },
+    "end": {
+      "exposition": "Thank you for playing 'On the Trail of the Lost Artifact'! We hope you enjoyed the adventure. Feel free to start again and explore different paths and outcomes."
+    }
+  }
+}

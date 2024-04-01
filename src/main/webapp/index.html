@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome page!</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="registration-wrapper">
+    <div class="registration-block">
+        <form method="post" action="./authorization">
+            <h3 class="registration-label">Sign in</h3>
+            <label for="username"></label>
+            <input class="form-control" type="text" name="username" maxlength="15"
+                   minlength="4" pattern="^[a-zA-Z0-9_.\-]*$" id="username" placeholder="Type your username" required>
+                <button class="registration-submit" type="submit">
+                    Continue
+                </button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
